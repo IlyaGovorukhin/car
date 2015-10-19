@@ -7,6 +7,7 @@ var gulp = require('gulp'), // ׁממבסעגוםםמ Gulp JS
     concat = require('gulp-concat'); // ׁךכויךא פאיכמג
 
 
+
 //  less
 gulp.task('less', function() {
     gulp.src('app/css/*.less')
@@ -38,6 +39,16 @@ gulp.task('less', function() {
 
 
     });
+
+// רנטפעû
+
+gulp.task('font', function() {
+    gulp.src('app/fonts/*')
+
+
+});
+
+
 
 
 
@@ -71,10 +82,14 @@ gulp.task('less', function() {
         gulp.src('app/js/*.js')
             .pipe(gulp.dest('dist/js'));
 
+        // רנטפע
+        gulp.src('app/fonts/*')
+            .pipe(gulp.dest('dist/fonts'));
+
 
 
         // image
-        gulp.src('app/img/*')
+        gulp.src('app/img/*/*')
             .pipe(imagemin())
             .pipe(gulp.dest('dist/img'))
 

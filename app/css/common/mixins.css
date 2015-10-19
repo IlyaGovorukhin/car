@@ -1,4 +1,55 @@
 /* MIXINS */
+.textsetting {
+  color: #FFFFFF !important;
+  text-transform: uppercase !important;
+}
+.page_social-a {
+  margin: 30px 15px;
+  float: left;
+  display: inline-block;
+  vertical-align: top;
+  zoom: 1 !ie;
+  display: inline !ie;
+  height: 48px;
+  width: 48px;
+  -moz-transform: rotate(45deg);
+  /* Firefox */
+  -o-transform: rotate(45deg);
+  /* Opera */
+  -webkit-transform: rotate(45deg);
+  /* Safari y Chrome */
+  filter: progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=0.70710678, M12=-0.70710678, M21=0.70710678, M22=0.70710678);
+  /* IE */
+}
+.page_social-a:active {
+  opacity: 0.5;
+}
+.textsetting2 {
+  color: #818181 !important;
+  font-size: 15px !important;
+}
+.romb {
+  height: 42px;
+  width: 42px;
+  -moz-transform: rotate(45deg);
+  /* Firefox */
+  -o-transform: rotate(45deg);
+  /* Opera */
+  -webkit-transform: rotate(45deg);
+  /* Safari y Chrome */
+  filter: progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=0.70710678, M12=-0.70710678, M21=0.70710678, M22=0.70710678);
+  /* IE */
+}
+.romb2 {
+  -moz-transform: rotate(-45deg);
+  /* Firefox */
+  -o-transform: rotate(-45deg);
+  /* Opera */
+  -webkit-transform: rotate(-45deg);
+  /* Safari y Chrome */
+  filter: progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=0.70710678, M12=-0.70710678, M21=0.70710678, M22=0.70710678);
+  /* IE */
+}
 .inlineblock {
   display: inline-block;
   vertical-align: top;
@@ -16,4 +67,7 @@
 }
 .clearfix:after {
   clear: both;
+}
+a {
+  text-decoration: none;
 }

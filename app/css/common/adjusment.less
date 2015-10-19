@@ -1,9 +1,9 @@
 
 /* --------- adjustment --------- */
 
-@container-width    : 960px;
-@footer-height      : 376px;
-@body-font          : Arial, Helvetica, sans-serif;
+@container-width    : 1264px;
+@footer-height      : 171px;
+
 
 /* --------- base --------- */
 
@@ -14,7 +14,7 @@ html {
 }
 
 body {
-  font: 14px/1.41 @body-font;
+
   -webkit-font-smoothing: antialiased;
   width:100%;
   height:100%;
@@ -34,7 +34,9 @@ body {
   overflow: hidden;
   min-width: @container-width + 20;
 
-  .empty {
+  &:after {
+    content: "";
+    display: block;
     position: relative;
     height: @footer-height;
   }
@@ -63,7 +65,8 @@ p {
 }
 
 footer {
-  position: relative;
+
+position: relative;
   margin-top: -@footer-height;
   height: @footer-height;
   min-width: @container-width + 20;
