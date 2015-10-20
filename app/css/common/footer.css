@@ -21,7 +21,7 @@
   filter: progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=0.70710678, M12=-0.70710678, M21=0.70710678, M22=0.70710678);
   /* IE */
 }
-.page_social-a:active {
+.page_social-a:hover {
   opacity: 0.5;
 }
 .textsetting2 {
@@ -386,7 +386,7 @@ footer {
   min-width: 1284px;
 }
 .footer_wrap {
-  width: 1264px;
+  width: 100%;
   margin: 0 auto;
 }
 .footer_wrap-text-wrap {
